@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashford Property and Ground Maintenance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#064e3b',    /* Deep Dark Green */
+                            primary: '#15803d', /* Strong Green */
+                            light: '#22c55e',   /* Bright/Lime Green */
+                            surface: '#f0fdf4'  /* Very Light Green for backgrounds */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Custom background overlay for Hero */
+        .hero-bg {
+            background-image: linear-gradient(rgba(6, 78, 59, 0.85), rgba(6, 78, 59, 0.7)), url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-white">
+
+    <header class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-house-chimney text-brand-light text-3xl"></i>
+                    <div class="flex flex-col">
+                        <span class="font-extrabold text-xl text-brand-dark leading-tight uppercase tracking-tight">Ashford</span>
+                        <span class="font-semibold text-[10px] text-brand-primary uppercase tracking-wider">Property & Ground</span>
+                    </div>
+                </div>
+                <nav class="hidden md:flex gap-8">
+                    <a href="#about" class="text-gray-600 hover:text-brand-primary font-medium transition-colors">About</a>
+                    <a href="#services" class="text-gray-600 hover:text-brand-primary font-medium transition-colors">Services</a>
+                    <a href="#features" class="text-gray-600 hover:text-brand-primary font-medium transition-colors">Why Us</a>
+                </nav>
+                <a href="#contact" class="hidden md:inline-flex items-center justify-center px-6 py-2.5 border border-transparent text-sm font-bold rounded-full text-white bg-brand-light hover:bg-brand-primary shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5">
+                    Free Quote
+                </a>
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-brand-dark p-2">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="hero-bg relative text-white py-32 md:py-48 flex items-center min-h-[80vh]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                <span class="inline-block py-1 px-3 rounded-full bg-brand-light/20 border border-brand-light/50 text-brand-light font-bold tracking-widest text-sm mb-6 shadow-sm backdrop-blur-md">
+                    RELIABLE | AFFORDABLE | LOCAL
+                </span>
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 drop-shadow-lg uppercase">
+                    ASHFORD <br class="hidden md:block" />
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-light to-white text-3xl md:text-5xl block mt-2">
+                        Property and Ground Maintenance
+                    </span>
+                </h1>
+                <p class="mt-4 max-w-3xl mx-auto text-xl md:text-2xl text-gray-200 font-medium italic drop-shadow-md">
+                    Property, Gardens & Removals — No Job Too Small
+                </p>
+                <div class="mt-10 flex justify-center gap-4">
+                    <a href="#contact" class="px-8 py-4 border border-transparent text-lg font-bold rounded-full text-brand-dark bg-white hover:bg-gray-50 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                        Get a Free Quote
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-brand-surface">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-brand-light/20 text-brand-primary mb-6">
+                    <i class="fa-solid fa-handshake-angle text-3xl"></i>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-6">Your Local Helping Hand</h2>
+                <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+                    Looking for a reliable helping hand with your home, garden or property? 
+                    <strong class="text-brand-primary">We're here to help!</strong> We provide a friendly, practical and affordable service across <strong>Ashford</strong> and surrounding areas.
+                </p>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-24 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-brand-light font-bold tracking-wide uppercase mb-2">Our Services</h2>
+                    <h3 class="text-3xl md:text-4xl font-extrabold text-brand-dark">Everything Your Property Needs</h3>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Service 1 -->
+                    <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group">
+                        <div class="w-14 h-14 bg-brand-surface rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-primary transition-colors duration-300">
+                            <i class="fa-solid fa-hammer text-2xl text-brand-primary group-hover:text-white transition-colors duration-300"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-brand-dark mb-3">Property Repairs</h4>
+                        <p class="text-gray-600 leading-relaxed">Minor repairs, painting, flat pack assembly, and general household jobs.</p>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group">
+                        <div class="w-14 h-14 bg-brand-surface rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-primary transition-colors duration-300">
+                            <i class="fa-solid fa-bars-staggered text-2xl text-brand-primary group-hover:text-white transition-colors duration-300"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-brand-dark mb-3">Fencing</h4>
+                        <p class="text-gray-600 leading-relaxed">Fence repairs, replacement, panels and general outdoor maintenance.</p>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group">
+                        <div class="w-14 h-14 bg-brand-surface rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-primary transition-colors duration-300">
+                            <i class="fa-solid fa-wrench text-2xl text-brand-primary group-hover:text-white transition-colors duration-300"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-brand-dark mb-3">Property Maintenance</h4>
+                        <p class="text-gray-600 leading-relaxed">Helping keep your home, rental property or outdoor space looking its best.</p>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group">
+                        <div class="w-14 h-14 bg-brand-surface rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-primary transition-colors duration-300">
+                            <i class="fa-solid fa-trash-can text-2xl text-brand-primary group-hover:text-white transition-colors duration-300"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-brand-dark mb-3">Rubbish Removals</h4>
+                        <p class="text-gray-600 leading-relaxed">Clear unwanted household items, garden waste and general rubbish.</p>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group">
+                        <div class="w-14 h-14 bg-brand-surface rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-primary transition-colors duration-300">
+                            <i class="fa-solid fa-leaf text-2xl text-brand-primary group-hover:text-white transition-colors duration-300"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-brand-dark mb-3">Garden Maintenance</h4>
+                        <p class="text-gray-600 leading-relaxed">Tidy ups, grass cutting, hedge trimming, clearance and more.</p>
+                    </div>
+                    
+                    <!-- Decorative/Call to Action Empty State -->
+                    <div class="bg-brand-primary rounded-2xl p-8 shadow-md flex flex-col justify-center items-center text-center text-white relative overflow-hidden">
+                        <div class="absolute -right-4 -bottom-4 opacity-10">
+                            <i class="fa-solid fa-leaf text-9xl"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4 relative z-10">Need something else?</h4>
+                        <p class="mb-6 relative z-10 text-brand-surface">Just ask! We handle all sorts of odd jobs.</p>
+                        <a href="#contact" class="inline-block px-6 py-2 bg-white text-brand-primary font-bold rounded-full hover:bg-gray-100 transition-colors z-10">
+                            Contact Us
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Features/Values Section -->
+        <section id="features" class="py-16 bg-brand-dark text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 divide-y sm:divide-y-0 sm:divide-x divide-white/20 text-center">
+                    
+                    <div class="px-4 py-6 sm:py-0 flex flex-col items-center">
+                        <i class="fa-regular fa-circle-check text-4xl text-brand-light mb-4"></i>
+                        <h4 class="font-semibold text-lg">Friendly & straightforward service</h4>
+                    </div>
+
+                    <div class="px-4 py-6 sm:py-0 flex flex-col items-center">
+                        <i class="fa-solid fa-users text-4xl text-brand-light mb-4"></i>
+                        <h4 class="font-semibold text-lg">Reliable appointments & clear communication</h4>
+                    </div>
+
+                    <div class="px-4 py-6 sm:py-0 flex flex-col items-center">
+                        <i class="fa-solid fa-sterling-sign text-4xl text-brand-light mb-4"></i>
+                        <h4 class="font-semibold text-lg">Fair, transparent prices agreed before work begins</h4>
+                    </div>
+
+                    <div class="px-4 py-6 sm:py-0 flex flex-col items-center">
+                        <i class="fa-regular fa-face-smile text-4xl text-brand-light mb-4"></i>
+                        <h4 class="font-semibold text-lg">Small jobs welcome!</h4>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Contact & Footer Section -->
+    <footer id="contact" class="bg-gray-900 text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 mb-16 border-b border-gray-800 pb-16">
+                
+                <!-- Contact Hook -->
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">
+                        Get in touch today for a <span class="text-brand-light italic">free, no-obligation quote!</span>
+                    </h2>
+                    <p class="text-xl text-gray-400 font-medium italic">
+                        "Your Local Helping Hand"
+                    </p>
+                </div>
+
+                <!-- Contact Details -->
+                <div class="flex flex-col justify-center space-y-8 bg-gray-800/50 p-8 rounded-3xl border border-gray-700">
+                    <a href="tel:07956746888" class="flex items-center group">
+                        <div class="w-12 h-12 bg-brand-primary rounded-full flex items-center justify-center mr-6 group-hover:bg-brand-light transition-colors">
+                            <i class="fa-solid fa-phone text-xl text-white"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-400 uppercase tracking-wide">Call Us Now</p>
+                            <p class="text-2xl md:text-3xl font-bold text-white group-hover:text-brand-light transition-colors">07956 746888</p>
+                        </div>
+                    </a>
+
+                    <a href="mailto:Ashfordpmndgm@gmail.com" class="flex items-center group">
+                        <div class="w-12 h-12 bg-brand-primary rounded-full flex items-center justify-center mr-6 group-hover:bg-brand-light transition-colors">
+                            <i class="fa-solid fa-envelope text-xl text-white"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-400 uppercase tracking-wide">Email Us</p>
+                            <p class="text-lg md:text-xl font-bold text-white group-hover:text-brand-light transition-colors break-all">Ashfordpmndgm@gmail.com</p>
+                        </div>
+                    </a>
+
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-brand-primary rounded-full flex items-center justify-center mr-6">
+                            <i class="fa-solid fa-location-dot text-xl text-white"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-400 uppercase tracking-wide">Service Area</p>
+                            <p class="text-lg font-bold text-white">Ashford and surrounding areas</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+                <p>&copy; 2026 Ashford Property and Ground Maintenance. All rights reserved.</p>
+                <div class="flex gap-4 mt-4 md:mt-0 text-2xl">
+                    <a href="#" class="hover:text-brand-light transition-colors"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="hover:text-brand-light transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
